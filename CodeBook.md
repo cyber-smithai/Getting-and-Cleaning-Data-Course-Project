@@ -1,28 +1,29 @@
----
-title: "CodeBook.md"
-author: "Matthew Smith"
-date: "4/6/2020"
-output: html_document
----
+|         |            |  
+| ------------- |:-------------:|
+| Title:     | CodeBook.md |
+| Author:     | Matthew Smith      |
+| Date: | 4/6/2020   |
+| University:      |Johns Hopkins University           |
+|Specialization:       |  Data Science Specialization           |
 ## Getting and Cleaning Data - peer assessment project
 
 
 ## The original data was transformed by
 
-Step 1. Merging the training and the test sets to create one data set.
-Step 2. Extracting only the measurements on the mean and standard deviation for each measurement. 
-Step 3. Using descriptive activity names to name the activities in the data set
-Step 4. Appropriately labeling the data set with descriptive activity names. 
-Step 5. Creating a second, independent tidy data set with the average of each variable for each activity and each subject. 
+* Step 1. Merging the training and the test sets to create one data set.
+* Step 2. Extracting only the measurements on the mean and standard deviation for each measurement. 
+* Step 3. Using descriptive activity names to name the activities in the data set
+* Step 4. Appropriately labeling the data set with descriptive activity names. 
+* Step 5. Creating a second, independent tidy data set with the average of each variable for each activity and each subject. 
 
 ## About R script
-File with R code "run_analysis.R" perform 5 following steps (in accordance assigned task of course work)
+File with R code "run_analysis.R" perform the 5 steps listed above (in accordance assigned task of course work)
 
 ## About variables:   
 
-*The variables are divided into two main groups, Train Data and Test Data
+*The variables are divided into three main groups, Train Data, Test Data and other
 ## Train Data
-The variables for Train Data are as follows:
+The variables for Train Data group are as follows:
 * ***trainDS1***  is the variable for the file X_train.txt
 * ***trainDS2***   is the variable for the file Y_train.txt
 * ***trainsub***  is the variable for the filesubject_train.txt
@@ -31,6 +32,8 @@ The variables for Train Data are as follows:
 * ***subject_train*** reads the data from trainsub
 
 ## Test Data
+The variables for Test Data group are as follows:
+
 * ***testDS1***  is the variable for the file X_test.txt
 * ***testDS2***  is the variable for the file Y_test.txt 
 * ***testsub***   is the variable for the file subject_test.txt
@@ -38,6 +41,8 @@ The variables for Train Data are as follows:
 * ***testY*** reads the data from  testDS2 
 * ***subject_test*** reads the data from testsub
 
+## Other
+The variables for other group are as follows:
 * ***features***  is the variable for the file features.txt. The  features.txt  contains the correct variable name, which corresponds to each column of  x_train.txt  and  x_test.txt
 
 * ***act_Labels*** is the variable for the file activity_labels.txt.  The  activity_labels.txt  contains the descriptive names for each activity label, which corresponds to each number in the  y_train.txt  and  y_test.txt
